@@ -5,9 +5,9 @@ import svgr from "vite-plugin-svgr";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  base: "/task",
   plugins: [tsconfigPaths(), react(), svgr(), tailwindcss()],
   build: {
-    outDir: "../static",
     sourcemap: true,
     emptyOutDir: true,
     rollupOptions: {
