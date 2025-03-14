@@ -8,6 +8,7 @@ export default defineConfig({
   base: "/task",
   plugins: [tsconfigPaths(), react(), svgr(), tailwindcss()],
   build: {
+    outDir: "dist",
     sourcemap: true,
     emptyOutDir: true,
     rollupOptions: {
