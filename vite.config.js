@@ -5,24 +5,6 @@ import svgr from "vite-plugin-svgr";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/task",
+  base: "/task/",
   plugins: [tsconfigPaths(), react(), svgr(), tailwindcss()],
-  build: {
-    outDir: "dist",
-    sourcemap: true,
-    emptyOutDir: true,
-    rollupOptions: {
-      input: "./src/main.tsx",
-      output: {
-        entryFileNames: `[name].js`,
-        chunkFileNames: `[name].js`,
-        assetFileNames: `[name].[ext]`,
-        manualChunks: (id) => {
-          if (id.includes("node_modules")) {
-            return "vendor";
-          }
-        },
-      },
-    },
-  },
 });
