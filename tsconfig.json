@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": ["vite/client", "vitest/globals", "vite-plugin-svgr/client"],
+    "paths": {
+      "@/app/*": ["app/*"],
+      "@/objects/*": ["objects/*"],
+      "@/hooks/*": ["shared/hooks/*"],
+      "@/ui/*": ["shared/ui/*"],
+      "@/store/*": ["shared/store/*"]
+    },
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "tests",
+    "src/app/types/declarations/*.d.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
