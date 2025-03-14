@@ -25,11 +25,5 @@
     "inlineSources": true,
     "sourceRoot": "/"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "tests",
-    "src/app/types/declarations/*.d.ts"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
