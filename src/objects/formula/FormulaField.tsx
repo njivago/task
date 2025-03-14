@@ -53,7 +53,7 @@ export const FormulaInput: React.FC = () => {
   const handleSuggestionClick = (suggestion: TTag) => {
     if (tags.length !== 0 && !OPERATORS.includes(tags[tags.length - 1].name)) {
       setErrorMessage(
-        "You must add an operator before selecting a suggestion."
+        "You must add an operator before selecting a suggestion. Enter any operator to continue."
       );
       return;
     }
